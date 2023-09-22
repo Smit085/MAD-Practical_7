@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".WebViewActivity">
 
     <TextView
         android:id="@+id/txt_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:text="Video View"
+        android:text="Web Video View"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,9 +28,10 @@
         app:layout_constraintTop_toBottomOf="@id/txt_title">
 
         <VideoView
-            android:id="@+id/videoView"
+            android:id="@+id/webvideoView"
             android:layout_width="match_parent"
             android:layout_height="250dp"/>
+
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
         app:maxImageSize="50dp"
-        android:src="@drawable/baseline_arrow_forward_12"
+        android:src="@drawable/baseline_keyboard_backspace_12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
