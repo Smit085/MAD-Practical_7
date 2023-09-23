@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         initVideoPlayer()
         binding.btnSwitch.setOnClickListener{
-            Intent(this,WebViewActivity::class.java).also{ startActivity(it) }
+            Intent(this,WebviewActivity::class.java).also{ startActivity(it) }
         }
     }
     private fun initVideoPlayer(){

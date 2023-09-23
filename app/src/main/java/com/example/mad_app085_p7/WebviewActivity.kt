@@ -5,15 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebSettings
 import androidx.core.view.WindowCompat
-import com.example.mad_app085_p7.databinding.ActivityWebViewBinding
+import com.example.mad_app085_p7.databinding.ActivityWebviewBinding
 
-class WebViewActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityWebViewBinding
+class WebviewActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityWebviewBinding
     override fun onCreate (savedInstancestate: Bundle?) {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstancestate)
 
-        binding = ActivityWebViewBinding.inflate(layoutInflater)
+        binding = ActivityWebviewBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initWebVideoPlayer()
         binding.btnSwitch.setOnClickListener {
