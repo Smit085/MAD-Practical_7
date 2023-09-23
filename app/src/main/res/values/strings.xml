@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">mad_app085_p7</string>
+    <string name="ttl_videoView">Video View</string>
+    <string name="ttl_webView">Web Video View</string>
 </resources>
