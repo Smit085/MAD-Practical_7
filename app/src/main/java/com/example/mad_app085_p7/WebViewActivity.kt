@@ -16,9 +16,12 @@ class WebViewActivity : AppCompatActivity() {
         binding = ActivityWebViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initWebVideoPlayer()
-        binding.btnSwitch.setOnClickListener{
-            Intent(this,MainActivity::class.java).also{ startActivity(it) }
+        binding.btnSwitch.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(intent)
         }
+
     }
     private val youtubeld = "6stlCkUDG_s"
 

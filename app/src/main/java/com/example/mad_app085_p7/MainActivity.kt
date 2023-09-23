@@ -31,4 +31,7 @@ class MainActivity : AppCompatActivity() {
         binding.videoView.requestFocus()
         binding.videoView.start()
     }
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+    }
 }
