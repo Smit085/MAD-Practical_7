@@ -24,7 +24,6 @@ class WebViewActivity : AppCompatActivity() {
 
     }
     private val youtubeld = "6stlCkUDG_s"
-
     private fun initWebVideoPlayer(){
         val webSettings: WebSettings = binding.webView.settings
         webSettings.javaScriptEnabled = true
